@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maria — Política de Privacidade</title>
+  <meta name="description" content="Política de Privacidade da Maria, app de QA para gravar evidências de testes.">
+  <style>
+    :root { --fundo: #08080a; --superficie: #111114; --texto: #e8e8ec; --suave: #a0a0ab; --borda: rgba(255,255,255,0.08); --acento: #8ab4ff; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--fundo); color: var(--texto); font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    main { max-width: 760px; margin: 0 auto; padding: 48px 20px 80px; }
+    h1 { font-size: 1.9rem; margin: 0 0 4px; }
+    h2 { font-size: 1.15rem; margin: 36px 0 8px; padding-top: 16px; border-top: 1px solid var(--borda); }
+    p, li { color: var(--texto); }
+    .suave { color: var(--suave); }
+    a { color: var(--acento); }
+    ul { padding-left: 20px; }
+    code { background: var(--superficie); padding: 1px 6px; border-radius: 4px; font-size: 0.92em; }
+    nav { margin-bottom: 32px; }
+  </style>
+</head>
+<body>
+<main>
+  <nav><a href="./">← Maria</a></nav>
+  <h1>Política de Privacidade da Maria</h1>
+  <p class="suave">Vigente desde 25 de outubro de 2026.</p>
+
+  <p>A Maria é um aplicativo de computador (Windows e macOS) que ajuda pessoas de QA a testar sistemas web e a guardar as evidências dos testes: vídeos, prints e relatórios. Ela roda inteiramente no computador de quem a usa. <strong>A Maria não tem servidores próprios</strong>, e o desenvolvedor não recebe, não armazena e não tem acesso aos dados de quem a usa.</p>
+
+  <h2>Dados do Google</h2>
+  <p>Se você conectar uma conta Google, a Maria pede apenas a permissão <code>https://www.googleapis.com/auth/drive.file</code>. Com ela, a Maria só enxerga os arquivos e as pastas que ela mesma criou no seu Google Drive. Ela não lê, não lista e não altera nenhum outro arquivo do seu Drive.</p>
+  <p>Com essa permissão, a Maria:</p>
+  <ul>
+    <li>cria pastas e envia para o seu Drive as evidências das execuções de teste, quando você liga essa opção num projeto ou pede o envio;</li>
+    <li>confere se cada envio chegou completo;</li>
+    <li>cria e remove compartilhamentos dessas pastas quando você pede: com e-mails que você convida, ou por um link com prazo que você escolhe. Quando o prazo de um link vence, a Maria retira o acesso;</li>
+    <li>move essas pastas para a lixeira do Drive quando você pede para apagar uma evidência do Drive.</li>
+  </ul>
+  <p>Para isso, a Maria lê o endereço de e-mail da conta conectada, que aparece na tela de ajustes, e guarda no seu computador o token de acesso cifrado pelo cofre do sistema operacional. O token nunca sai do seu computador, a não ser nas chamadas diretas à API do Google Drive.</p>
+  <p>Você pode desconectar a conta a qualquer momento nos ajustes da Maria. Isso revoga os compartilhamentos ativos e o token. Também é possível retirar o acesso em <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+  <p><strong>Uso Limitado:</strong> o uso e a transferência, para qualquer outro app, das informações recebidas das APIs do Google pela Maria seguem a <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de Dados do Usuário dos Serviços de API do Google</a>, incluindo os requisitos de Uso Limitado. A Maria não vende esses dados, não os usa para publicidade e não os transfere a terceiros.</p>
+
+  <h2>Dados que ficam no seu computador</h2>
+  <p>Projetos, cards, roteiros, perfis de teste, senhas dos sistemas testados (cifradas pelo cofre do sistema) e evidências ficam no seu computador, nas pastas que você escolher. Você pode apagá-los pela própria Maria.</p>
+
+  <h2>Geração de roteiros com IA</h2>
+  <p>Se você usar a geração de roteiros com IA, a Maria aciona o Claude Code instalado no seu computador, com a sua própria conta da Anthropic. O conteúdo do card e os anexos que você escolher são enviados à Anthropic por esse programa, sob os termos que você aceitou com ela. Nenhum dado do Google Drive é enviado à IA.</p>
+
+  <h2>Mudanças</h2>
+  <p>Se esta política mudar, a nova versão será publicada nesta página, com a data de vigência atualizada.</p>
+
+  <h2>Contato</h2>
+  <p>Dúvidas sobre privacidade: <a href="https://github.com/felipereisdev">github.com/felipereisdev</a>.</p>
+</main>
+</body>
+</html>
